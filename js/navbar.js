@@ -9,3 +9,5 @@ function navbar(){
         }
     })
 }
+
+navbar()
