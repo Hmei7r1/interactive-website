@@ -26,10 +26,11 @@ const server = http.createServer((req, res) => {
         if(req.url.endsWith(ext)){
 
 
-            fs.readFile("../.." + req.url, (err, index) => {
+            fs.readFile("../../" + req.url, (err, index) => {
                 if (err){
                     res.writeHead(404, {"Content-Type":"text/html"});
                     res.end("not found page")
+                    return;
                 }
 
                 res.writeHead(200, extention[ext])

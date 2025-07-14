@@ -6,11 +6,23 @@
         box-sizing: border-box;
     }
 
+    body{
+        margin-bottom: 10000px;
+    }
+
     header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 4%;
+        padding: 10px 5%;
+        background-color: black;
+        color: white;
+        border-radius: 40px;
+        width: 90%;
+        margin: 20px auto;
+        z-index: 999;
+        position:sticky;
+        top: 0;
     }
 
     header .title h1{
@@ -21,9 +33,11 @@
 
     header .navbar {
         position: absolute;
-        top: 50px;
-        left: -10px;
-        padding: 10px;
+        top: -300px;
+        left: 9%;
+        transition: all 2s ease;
+        z-index: 0;
+        animation: slide 2s ease;
     }
 
     header .navbar ul {
@@ -31,10 +45,11 @@
         flex-direction: column;
         gap: 2rem;
         background-color: black;
-        width: 200px;
+        width: 300px;
         height: auto;
         padding: 30px;
         border-bottom-right-radius: 30px ;
+        border-bottom-left-radius: 30px;
     }
 
     header .navbar ul li {
@@ -46,6 +61,15 @@
         font-family: sans-serif;
         font-weight: 600;
         text-decoration: none;
+    }
+
+    @keyframes slide{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
 
 }

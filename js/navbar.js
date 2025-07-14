@@ -1,11 +1,14 @@
 function navbar(){
     const navbar = document.querySelector(".navbar")
-    const checkbox = document.getElementById("menucheck")
+    const checkbox = document.getElementById("menu")
     const menu = document.querySelector(".humberger")
 
-    menu.addEventListener("click", () => {
-        if (checkbox.chacked){
-            navbar.style.left = "-100px"
+    checkbox.addEventListener("click", () => {
+        if (checkbox.checked){
+            navbar.style.top = "-310px"
+            navbar.style.animation = "slide 2s ease"
+        }else{
+            navbar.style.top = "55px"
         }
     })
 }

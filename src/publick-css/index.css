@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section .container .containerText .textTop {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    section .container .imageUser{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    section .container .imageUser > img {
+        border-radius: 100px;
+        width: 150px;
+    }
+
+    section .container .containerText {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    section .container .containerText .textTop 
+
+}
