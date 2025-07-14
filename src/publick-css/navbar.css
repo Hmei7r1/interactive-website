@@ -6,10 +6,6 @@
         box-sizing: border-box;
     }
 
-    body{
-        margin-bottom: 10000px;
-    }
-
     header{
         display: flex;
         justify-content: space-between;
